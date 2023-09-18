@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="/HTML-Foundation/Chap1_home.html" target="_blank" method="GET" autocomplete="on">
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname" id="fname" class="txt" autofocus placeholder="First Name"><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" class="txt" placeholder="Last Name"><br><br>
+            <label for="skill">Preffered Language: </label>
+            <div class="radio">
+                <label for="html">HTML</label>
+                <input type="radio" name="frontend" id="html" value="html">
+                <label for="css">CSS</label>
+                <input type="radio" name="frontend" id="css" value="css">
+                <label for="js">JavaScript</label>
+                <input type="radio" name="frontend" id="js" value="js"><br>
+            </div>
+            <label for="language">Choose a language: </label>
+            <select id="language" name="language">
+                <option value="default" selected>Nothing</option>
+                <option value="c">C</option>
+                <option value="java">Java</option>
+                <option value="node">Node</option>
+                <option value="py">Python</option>
+            </select><br><br>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min="20" max="30"><br><br>
+            <label for="date">DOB: </label>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="file">Upload your resume: </label>
+            <input type="file" name="file" id="file" class="file"><br><br>
+            <label for="salary">Expected Salary(LPA): </label>
+            <input type="range" name="salary" id="salary" min="450000" max="4000000"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="email" placeholder="Enter your email"><br><br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" class="password"placeholder="Enter your password"><br><br>
+            <label for="address">Address</label>
+            <textarea type="textarea" name="address" id="address" value="address" placeholder="Enter your address"></textarea><br>
+            <p><input type="checkbox" name="privacy" id="privacy">accept the terms & policies</p>
+            <button value="submit" class="txt" type="submit">Submit</button>
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
